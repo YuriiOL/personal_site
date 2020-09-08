@@ -17,9 +17,14 @@ export default {};
   height: 30%;
   width: 100%;
 }
+@media (max-width: 1000px) {
+  .wrapper {
+    height: 50%;
+  }
+}
 @media (max-width: 500px) {
   .wrapper {
-    height: 30%;
+    font-size: 10px;
     width: 500px;
   }
 }
