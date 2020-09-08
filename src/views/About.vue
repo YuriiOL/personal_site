@@ -1,5 +1,18 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div class="wrapper">
+    <AboutInfo></AboutInfo>
+    <Triangle></Triangle>
+    <div></div>
   </div>
 </template>
+
+<script>
+import Triangle from "@/components/Triangle.vue";
+import AboutInfo from "@/components/AboutInfo.vue";
+export default {
+  components: { AboutInfo, Triangle }
+};
+</script>
+
+<style scoped>
+</style>
