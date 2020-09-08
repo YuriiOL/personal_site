@@ -157,12 +157,36 @@ export default {};
   transform: rotateX(-90deg) translateZ(100px);
 }
 .stage {
-  margin-top: -10%;
-  margin-left: 20%;
+  margin-top: -15%;
+  margin-left: 40%;
 }
 h1 {
   margin-bottom: 25%;
   margin-left: 10%;
+}
+@media (max-width: 1300px) {
+  .stage {
+    margin-top: -15%;
+    margin-left: 20%;
+  }
+}
+@media (max-width: 1000px) {
+  .stage {
+    margin-top: -10%;
+    margin-left: 20%;
+  }
+}
+@media (max-width: 670px) {
+  .stage {
+    margin-top: 140%;
+    margin-left: -100%;
+  }
+}
+@media (max-height: 666px) {
+  .stage {
+    margin-top: 50%;
+    margin-left: -80%;
+  }
 }
 </style>
 

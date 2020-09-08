@@ -21,4 +21,27 @@ div {
   width: 30%;
   height: 30%;
 }
+@media (max-width: 1000px) {
+  div {
+    width: 250px;
+    margin-left: -15%;
+    height: 40%;
+  }
+}
+@media (max-width: 670px) {
+  div {
+    width: 300px;
+    font-size: 15px;
+    margin-left: -15%;
+    height: 90%;
+  }
+}
+@media (max-height: 666px) {
+  div {
+    width: 250px;
+    font-size: 10px;
+    margin-left: -15%;
+    height: 100%;
+  }
+}
 </style>

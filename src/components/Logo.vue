@@ -14,6 +14,11 @@ export default {};
 </script>
 
 <style scoped>
+@media (max-width: 500px) {
+  .logWrapper {
+    display: none;
+  }
+}
 .logWrapper {
   width: 200px;
   height: 370px;

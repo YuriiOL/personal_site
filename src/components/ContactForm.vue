@@ -24,9 +24,10 @@ export default {};
 
 <style scoped>
 .maillBox {
-  height: 45%;
-  width: 45%;
+  height: 500px;
+  width: 300px;
   position: relative;
+  margin-left: -200px;
 }
 h1 {
   margin-left: 23%;
@@ -84,5 +85,22 @@ button:hover {
 input {
   background-color: rgb(43, 43, 43);
   border: 1px solid white;
+}
+@media (max-width: 1000px) {
+  .maillBox {
+    margin-left: -160px;
+  }
+}
+@media (max-width: 800px) {
+  .maillBox {
+    margin-left: 0px;
+    font-size: 15px;
+  }
+}
+@media (max-width: 480px) {
+  .maillBox {
+    margin-left: -50px;
+    font-size: 15px;
+  }
 }
 </style>

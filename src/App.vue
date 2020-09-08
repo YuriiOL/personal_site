@@ -46,13 +46,29 @@ export default {
       home: false,
       about: false,
       projects: false,
-      contact: false
+      contact: false,
     };
-  }
+  },
 };
 </script>
 
 <style>
+@media (max-width: 1000px) {
+  .content {
+    max-width: 500px;
+  }
+}
+@media (max-width: 670px) {
+  .content {
+    max-width: 200px;
+    font-size: 10px;
+  }
+}
+@media (max-width: 500px) {
+  .content {
+    font-size: 10px;
+  }
+}
 .slide-enter-active,
 .slide-leave-active {
   transition: opacity 0.7s, transform 0.7s;
@@ -117,8 +133,8 @@ a {
 }
 .content {
   position: fixed;
-  margin-left: 50px;
-  width: 100%;
+  margin-left: 15%;
+  width: 1000px;
   height: 100%;
   background-color: rgb(29, 29, 29);
   color: white;

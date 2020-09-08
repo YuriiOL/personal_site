@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div>
     <AboutInfo></AboutInfo>
     <Triangle></Triangle>
     <div></div>
@@ -10,7 +10,7 @@
 import Triangle from "@/components/Triangle.vue";
 import AboutInfo from "@/components/AboutInfo.vue";
 export default {
-  components: { AboutInfo, Triangle }
+  components: { AboutInfo, Triangle },
 };
 </script>
 
