@@ -6,20 +6,36 @@
       </router-link>
       <div class="routs">
         <router-link to="/">
-          <i class="rout fas fa-home" @mouseover="home = true" v-if="home == false"></i>
-          <a v-else @mouseleave="home = false">home</a>
+          <div @mouseover="home = true" @mouseleave="home = false" class="divLink">
+            <transition name="rout" mode="out-in">
+              <i class="rout fas fa-home" v-if="home == false"></i>
+              <a v-else>home</a>
+            </transition>
+          </div>
         </router-link>
         <router-link to="/about">
-          <i class="rout fas fa-user" @mouseover="about = true" v-if="about == false"></i>
-          <a v-else @mouseleave="about = false">about</a>
+          <div @mouseover="about = true" @mouseleave="about = false" class="divLink">
+            <transition name="rout" mode="out-in">
+              <i class="rout fas fa-user" v-if="about == false"></i>
+              <a v-else>about</a>
+            </transition>
+          </div>
         </router-link>
         <router-link to="/projects">
-          <i class="rout fas fa-brain" @mouseover="projects = true" v-if="projects == false"></i>
-          <a class="contact" v-else @mouseleave="projects = false">projects</a>
+          <div @mouseover="projects = true" @mouseleave="projects = false" class="divLink">
+            <transition name="rout" mode="out-in">
+              <i class="rout fas fa-brain" v-if="projects == false"></i>
+              <a class="contact" v-else>projects</a>
+            </transition>
+          </div>
         </router-link>
         <router-link to="/contact">
-          <i class="rout far fa-envelope" @mouseover="contact = true" v-if="contact == false"></i>
-          <a class="contact" v-else @mouseleave="contact = false">contact</a>
+          <div @mouseover="contact = true" @mouseleave="contact = false" class="divLink">
+            <transition name="rout" mode="out-in">
+              <i class="rout far fa-envelope" v-if="contact == false"></i>
+              <a class="contact" v-else>contact</a>
+            </transition>
+          </div>
         </router-link>
       </div>
       <div class="links">
@@ -149,5 +165,19 @@ a {
 }
 .rout {
   color: white;
+}
+.divLink {
+  height: 20px;
+  width: 25px;
+  margin-left: -10px;
+  padding: 10px 12px;
+}
+.rout-enter-active,
+.rout-leave-active {
+  transition: opacity 0.5s;
+}
+.rout-enter,
+.rout-leave-to {
+  opacity: 0;
 }
 </style>
